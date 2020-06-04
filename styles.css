@@ -1,0 +1,196 @@
+/*HEADER*/
+.logo img{
+    max-width: 400px;
+}
+.logo{
+    text-align: center;
+}
+.coutries img{
+    max-width: 30px;
+}
+.header{
+    background-color: rgb(206, 81, 81);
+}
+.header a{
+    color: black;
+}
+
+/* Menu mobile*/
+
+#menutoggle{
+    display: none;
+}
+.menulabel{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .header .menu1{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        width: 100%!important;
+        height: 0%;
+        z-index: 998;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+    .menu1 .row {
+        width: 100%;
+        align-items: center;
+    }
+    .header .menu1 a{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: white;
+    }
+    .menulabel{
+        display: block;
+        color: black;
+        height: inherit;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        z-index: 999;
+    }
+    .menulabel i {
+        font-size: 2em;
+    }
+
+    /*incones menu e 'x'*/
+    #menutoggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+    #menutoggle:checked ~ label i:first-child{
+        display: none;
+    }
+    #menutoggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+    #menutoggle:not(checked) ~ label i:first-child{
+        display: block;
+    }
+    /*aparecer menu*/
+    #menutoggle:checked ~ .menu1{
+        height: 100%;
+    }
+}
+
+/*HEADER FIM*/
+
+
+
+/*MAIN*/
+p, h3, h4{
+    color: white;
+}
+.main{
+    background-color: black;
+    padding-bottom: 20px;
+}
+.carrossel img{
+    max-height: 500px;
+    width: auto;
+}
+.carrossel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main img{
+    max-width: 100%;
+}
+.barra{
+    background-color: rgb(206, 81, 81);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main h4{
+    text-align: right;
+}
+.fanslide{
+    height: 450px;
+}
+.expande{
+    color: white;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+#togglefanart{
+    display: none;
+}
+iframe{
+    width: 100%;
+    height: 90%;
+}
+.videoslide{
+    height: 350px;
+}
+
+/**/
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+/**/
+
+.loja img{
+    height: 150px;
+    width: auto;
+}
+@media screen and (max-width: 785px) {
+    .loja img{ 
+        width: 100%;
+        height: 500px;
+    }
+}
+
+/*MAIN FIM*/
+
+
+
+/*FOOTER*/
+
+.footer{
+    padding-top: 20px;
+    background-color: rgb(206, 81, 81);
+    color: white;
+}
+
+.footer p{
+    font-size: 80%;
+}
+.footer a{
+    color: white;
+}
+
+.tweet{
+    padding: 10px;
+}
+.footer i{
+    font-size: 1.5em;
+}
+.redesocial{
+    text-align: center;
+}
+
+
+.copyrigth{
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*FOOTER FIM*/
